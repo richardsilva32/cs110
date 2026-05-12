@@ -1,0 +1,339 @@
+<!-- Student name: Richard Silva.
+     File Name: contacts.html.
+     Date: 2/21/26. -->
+<!-- Group members: Richard Silva. -->
+<!DOCTYPE html> <!-- Declares the document type and tells the browser to use HTML5 -->
+
+<html lang="en"> <!-- Root element of the webpage; lang="en" specifies that the content is in English -->
+
+<head> <!-- Contains metadata, title, stylesheets, fonts, and icons -->
+
+    <title>Contact Us - Location | Wild Rescues.</title>
+    <!-- Text displayed in the browser tab -->
+
+    <meta charset="utf-8">
+    <!-- Sets the character encoding to UTF-8 so all characters display correctly -->
+
+    <meta name="description"
+          content="Contact us as (814)555-8989 or visit us at 8989 Rescue Drive, Ocala, FL for more information.">
+    <!-- Provides a description of the webpage for search engines -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes the page responsive so it displays properly on mobile devices -->
+
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Links the external CSS stylesheet used to style the webpage -->
+
+    <!-- Google Font: Emblema One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Establishes an early connection to Google Fonts for faster loading -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Establishes an early connection to Google's font file server -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Emblema+One&display=swap"
+        rel="stylesheet">
+    <!-- Loads the Emblema One font -->
+
+    <!-- Google Fonts: Emblema One and Lora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Establishes another connection to Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Establishes another connection to the font file server -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <!-- Loads the Lora font family -->
+
+    <!-- Favicon and device icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Standard favicon displayed in browser tabs -->
+
+    <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32.png">
+    <!-- 32x32 PNG favicon -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <!-- Icon used when the site is saved to an Apple device home screen -->
+
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+    <!-- 192x192 icon used by Android devices and Chrome -->
+</head>
+
+<body> <!-- Contains all visible content of the webpage -->
+
+    <!-- Skip to content link -->
+    <a class="skip" href="#content">Skip to Content</a>
+    <!-- Allows keyboard and screen reader users to jump directly to the main content -->
+
+    <script src="scripts/script.js"></script>
+    <!-- Links the external JavaScript file used for interactive features -->
+
+    <nav class="mobile-nav">
+        <!-- Navigation menu displayed on mobile devices -->
+
+        <div id="nav-links">
+            <!-- Container holding the mobile navigation links -->
+
+            <a href="Index.html">Home</a>
+            <!-- Link to the homepage -->
+
+            <a href="about.html">About Us</a>
+            <!-- Link to the About Us page -->
+
+            <a href="partnership.html">Partnership</a>
+            <!-- Link to the Partnership page -->
+
+            <a href="gallery.html">Gallery</a>
+            <!-- Link to the Gallery page -->
+
+            <a href="faqs.html">FAQ's</a>
+            <!-- Link to the Frequently Asked Questions page -->
+
+            <a href="contacts.html">Contact</a>
+            <!-- Link to the Contact page -->
+        </div>
+
+        <a class="nav-icon" onclick="hamburger()">
+            <!-- Clickable icon that calls the hamburger() JavaScript function -->
+
+            <div>&#9776;</div>
+            <!-- Displays the hamburger menu icon (☰) -->
+        </a>
+    </nav>
+
+    <header>
+        <!-- Header section containing the site image and title -->
+
+        <!-- This portion of code is displaying an image -->
+        <div class="tab-desk">
+            <!-- Container shown on tablet and desktop screens -->
+
+            <a href="index.html">
+                <img src="images/baby-hawk.jpg"
+                     alt="A rescued baby hawk">
+            </a>
+            <!-- Clickable header image linking to the homepage -->
+        </div>
+
+        <div class="mobile">
+            <!-- Container shown on mobile devices -->
+
+            <h1>&#128062; Wild Rescues</h1>
+            <!-- Main site heading with a paw print symbol -->
+
+            <h2>Rescue. Rehabilitate. Release.</h2>
+            <!-- Site slogan -->
+        </div>
+    </header>
+
+    <nav class="tab-desk">
+        <!-- Navigation menu displayed on tablet and desktop screens -->
+
+        <ul>
+            <!-- Unordered list of navigation links -->
+
+            <li><a href="bootstrap.html">Home</a></li>
+            <!-- Link to the homepage -->
+
+            <li><a href="about.html">About Us</a></li>
+            <!-- Link to the About Us page -->
+
+            <li><a href="partnership.html">Partnership</a></li>
+            <!-- Link to the Partnership page -->
+
+            <li><a href="gallery.html">Gallery</a></li>
+            <!-- Link to the Gallery page -->
+
+            <li><a href="faqs.html">FAQ's</a></li>
+            <!-- Link to the FAQ page -->
+
+            <li><a href="contacts.html">Contact</a></li>
+            <!-- Link to the Contact page -->
+        </ul>
+    </nav>
+
+    <!-- This section of code is the main part of the webpage, displaying a majority of what is included within the website. -->
+    <main id="content">
+        <!-- Main content area of the webpage -->
+
+        <div>
+            <!-- Container for contact details -->
+
+            <id contact>
+                <!-- Identifier for the contact section -->
+
+                <h2>You can reach us at:</h2>
+                <!-- Section heading -->
+
+                <p "tel-link round">
+                    <a href="tel mobile:(814) 555-8989"></a>
+                </p "tel-link round">
+                <!-- Telephone link for mobile devices -->
+
+                <p class="tab-desk">(814) 555-8989</p>
+                <!-- Phone number displayed on tablet and desktop screens -->
+
+                <a .link>
+                    <p>
+                        Email:
+                        <a class="font-color"
+                           href="malito:Contact@wildrescues.net">
+                            Contact@wildrescues.net
+                        </a>
+                    </p>
+                </a>
+                <!-- Email link -->
+
+                <a .link>
+                    <p>Address: 8989 Rescue Drive, Ocala, FL, 34471</p>
+                </a>
+                <!-- Physical address -->
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55740.93210687456!2d-82.19813433690061!3d29.170322092221678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e62b541cba3ce5%3A0xf5f53be4b1380536!2sOcala%2C%20FL!5e0!3m2!1sen!2sus!4v1771699250943!5m2!1sen!2sus"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <!-- Embedded Google Map showing the business location -->
+        </div>
+
+        <div id="form">
+            <!-- Container for the contact form -->
+
+            <h2>Complete the form below and we will contact you soon.</h2>
+            <!-- Form heading -->
+
+            <form class="form-grid">
+                <!-- Start of the contact form -->
+
+                <fieldset>
+                    <!-- Groups contact information fields -->
+
+                    <legend>Contact Information</legend>
+                    <!-- Title for the fieldset -->
+
+                    <label for="fName">First Name:</label>
+                    <input type="text" name="fName" id="fName">
+                    <!-- Text box for the first name -->
+
+                    <label for="lName">Last Name:</label>
+                    <input type="text" name="lName" id="lName">
+                    <!-- Text box for the last name -->
+
+                    <label for="bName">Business Name:</label>
+                    <input type="text" name="bName" id="bName">
+                    <!-- Text box for the business name -->
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    <!-- Email input field -->
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                    <!-- Telephone input field -->
+                </fieldset>
+
+                <fieldset>
+                    <!-- Groups additional information options -->
+
+                    <legend>Additional Information.</legend>
+                    <!-- Title for the fieldset -->
+
+                    <p>I would like more information about:</p>
+                    <!-- Introductory text -->
+
+                    <label for="vol">
+                        <input type="radio" name="info" id="vol"
+                               value="Voulenteering">
+                        Voulenteering.
+                    </label>
+                    <!-- Radio button for volunteering -->
+
+                    <label for="sponsor">
+                        <input type="radio" name="info" id="sponsor"
+                               value="Sponsorship Oppourtunities.">
+                        Sponsorship Oppourtunities.
+                    </label>
+                    <!-- Radio button for sponsorship opportunities -->
+
+                    <label for="wild">
+                        <input type="radio" name="info" id="wild"
+                               value="Wildlife.">
+                        Wildlife.
+                    </label>
+                    <!-- Radio button for wildlife -->
+
+                    <label for="other">
+                        <input type="radio" name="info" id="other"
+                               value="Other">
+                        Other, please specify below.
+                    </label>
+                    <!-- Radio button for other topics -->
+
+                    <label for="questions">
+                        What Questions do you have for us?
+                    </label>
+                    <!-- Label for the textarea -->
+
+                    <textarea name="questions"
+                              id="questions"
+                              rows="5"
+                              cols="35">
+                    </textarea>
+                    <!-- Multi-line text box for user questions -->
+                </fieldset>
+
+                <button type="submit"
+                        id="submit"
+                        value="Submit"
+                        class="btn">
+                    Submit.
+                </button>
+                <!-- Submit button that sends the form data -->
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer section containing copyright and social media links -->
+
+        <div class="copyright">
+            <!-- Container for copyright information -->
+
+            <p>&copy; Copyright 2021. All Rights Reserved.</p>
+            <!-- Copyright notice -->
+
+            <p>
+                <a href="malito:Contact@wildrescues.net">
+                    Contact@wildrescues.net
+                </a>
+            </p>
+            <!-- Contact email address -->
+        </div>
+
+        <div class="social">
+            <!-- Container for social media icons -->
+
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook-logo.png"
+                     alt="The facebook logo">
+            </a>
+            <!-- Facebook link opening in a new tab -->
+
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="images/twitter-logo.png"
+                     alt="The twitter logo">
+            </a>
+            <!-- Twitter link opening in a new tab -->
+        </div>
+    </footer>
+
+</body>
+</html> <!-- Closing tag for the HTML document -->

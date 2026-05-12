@@ -1,0 +1,201 @@
+<!--
+    Student Clubs - Contact Page
+
+    Purpose of this file:
+    This webpage serves as the Contact page for the Student Clubs website.
+    It provides visitors with phone and email contact information for
+    questions regarding campus clubs and activities. The page also includes
+    navigation links, branding, social media icons, and mobile-friendly
+    settings.
+-->
+
+<!-- Declares the document as HTML5 so browsers use modern rendering rules -->
+<!DOCTYPE html>
+
+<!-- Root element of the webpage; lang="en" indicates the content is written in English -->
+<html lang="en">
+
+    <head>
+        <!-- ==========================================================
+             HEAD SECTION
+             Contains metadata, external stylesheets, fonts, and icons.
+             None of the content in the head is directly displayed on
+             the webpage itself.
+             ========================================================== -->
+
+        <!-- Sets the text displayed in the browser tab -->
+        <title>Contact | Student Clubs.</title>
+
+        <!-- Specifies UTF-8 character encoding to support special symbols -->
+        <meta charset="utf-8">
+
+        <!-- Makes the layout responsive so it scales correctly on phones and tablets -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Links the external CSS stylesheet that controls the page's appearance -->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- ==========================================================
+             GOOGLE FONTS CONNECTIONS
+             These preconnect links establish early connections to the
+             Google Fonts servers, improving font loading performance.
+             ========================================================== -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect"
+              href="https://fonts.gstatic.com"
+              crossorigin>
+
+        <!-- Imports the "DM Serif Display" font used for headings -->
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+              rel="stylesheet">
+
+        <!-- Additional preconnect links for the second font family -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect"
+              href="https://fonts.gstatic.com"
+              crossorigin>
+
+        <!-- Imports the "Roboto" font used for body text -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+              rel="stylesheet">
+
+        <!-- ==========================================================
+             FAVICON LINKS
+             These icons appear in browser tabs, bookmarks, and on
+             mobile home screens when the site is saved as an app.
+             ========================================================== -->
+
+        <!-- Standard favicon for most desktop browsers -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+
+        <!-- PNG favicon for browsers that support higher resolution icons -->
+        <link rel="icon"
+              type="images/png"
+              sizes="32x32"
+              href="images/favicon-32.png">
+
+        <!-- Icon used when the site is added to an iPhone or iPad home screen -->
+        <link rel="apple-touch-icon"
+              sizes="180x180"
+              href="images/apple-touch-icon.png">
+
+        <!-- Android icon for Chrome and other mobile browsers -->
+        <link rel="icon"
+              sizes="192x192"
+              href="images/android-chrome-192.png">
+    </head>
+
+    <body>
+        <!-- ==========================================================
+             BODY SECTION
+             Contains all visible content displayed in the browser.
+             ========================================================== -->
+
+        <!-- ==========================================================
+             HEADER SECTION
+             Displays the site title and a clickable banner image.
+             ========================================================== -->
+        <header>
+
+            <!-- Main heading identifying the website -->
+            <h1>Student Clubs</h1>
+
+            <!-- Clicking the image returns the user to the homepage -->
+            <a href="bootstrap.html">
+
+                <!-- Decorative image representing graduating students -->
+                <img src="images/group-of-students.jpg"
+                     alt="A group of students standing together">
+            </a>
+        </header>
+
+        <!-- ==========================================================
+             NAVIGATION SECTION
+             Provides links to all major pages in the Student Clubs site.
+             The "tab-desk" class likely displays this navigation only
+             on tablet and desktop layouts.
+             ========================================================== -->
+        <nav class="tab-desk">
+            <ul>
+                <!-- Homepage link -->
+                <li><a href="bootstrap.html">Home</a></li>
+
+                <!-- Clubs information page -->
+                <li><a href="clubs.html">Clubs</a></li>
+
+                <!-- Activities page -->
+                <li><a href="activities.html">Activities</a></li>
+
+                <!-- Current page: Contact -->
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- ==========================================================
+             MAIN CONTENT SECTION
+             Contains the primary information unique to this page.
+             ========================================================== -->
+        <main>
+
+            <!-- Wrapper div used for styling and layout of contact details -->
+            <div id="contact">
+
+                <!-- Section heading introducing the contact information -->
+                <h2>Contact me with any questions about Campus activities!</h2>
+
+                <!-- Phone number; "tab-desk" hides this on small screens -->
+                <p class="tab-desk">Phone: (203) 451-7825</p>
+
+                <!-- Email link using mailto:, which opens the email -->
+                <p>
+                    Email:
+                    <a href="mailto:r.d.silva@my.ccsu.edu"
+                       class="email-link">
+                        r.d.silva@my.ccsu.edu
+                    </a>
+                </p>
+
+            </div>
+        </main>
+
+        <!-- ==========================================================
+             FOOTER SECTION
+             Displays copyright information and social media links.
+             ========================================================== -->
+        <footer>
+
+            <!-- Copyright and contact information container -->
+            <div class="copyright">
+
+                <!-- Copyright notice -->
+                <p>&copy; Copyright 2021. All Rights Reserved.</p>
+
+                <!-- Plain text email address -->
+                <p>r.d.silva@my.ccsu.edu</p>
+            </div>
+
+            <!-- Social media icons container -->
+            <div class="social">
+
+                <!-- Facebook link; target="_blank" opens in a new tab -->
+                <a href="https://www.facebook.com"
+                   target="_blank">
+
+                    <!-- Facebook logo image -->
+                    <img src="images/facebook-logo.png"
+                         alt="The facebook logo">
+                </a>
+
+                <!-- Twitter/X link; opens in a new tab -->
+                <a href="https://www.twitter.com"
+                   target="_blank">
+
+                    <!-- Twitter logo image -->
+                    <img src="images/twitter-logo.png"
+                         alt="The twitter logo">
+                </a>
+            </div>
+
+        </footer>
+    </body>
+</html>

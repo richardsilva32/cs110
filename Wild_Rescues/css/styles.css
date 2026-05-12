@@ -1,0 +1,526 @@
+/*
+	Author: Richard Silva
+	Date: 3/5/26
+	File Name: styles.css	
+*/
+
+/* CSS Reset */
+	body, header, nav, main, footer, img, h1, ul, aside, figure, figcaption, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			
+	}
+	/* Style rule for body and images */
+		body {
+		background-color: #2a1f14;
+	}
+	
+		img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+
+		video {
+		max-width: 100%;
+		display: block;
+			}
+		
+		.hero {
+				background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("../images/baby-hawk.jpg");
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+				min-height: 500px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				margin-bottom: 0;
+			}
+
+		.welcome {
+				position: static;
+			}
+		.display-1 {
+			font-size: 4em;
+		}
+		.bg-brown {
+			background-color: #2a1f14;
+		}
+	/* Style rules for skip navigation link */
+		.skip {
+			position: absolute;
+			left: -999px;
+		}
+		.skip:focus {
+			color: #fff;
+			background-color: #2a1f14;
+			text-decoration: none;
+			padding: 0.5%;
+			top: auto;
+			left: auto;
+			right: 1px;
+			z-index: 1;
+		}
+		
+	/* Style rules for mobile viewport*/
+		@media screen and (max-width: 549px) {
+			
+		 figure img {
+			height: 220px;
+				}
+
+	/* Style rules to show mobile class and hide tab-desk class*/
+		.tab-desk, .desktop, #nav-links {
+			display: none;
+		}
+		.mobile, .mobile-tablet, .mobile-nav {
+			display: block;	
+		} 
+		
+	     header h1 {
+			font-family: "Emblema One", system-ui;
+			font-weight: 400;
+			font-style: normal;
+			margin: 2% 0 0 3%;
+			padding: 2%;
+			text-align: center;
+			font-size: 4em;
+			color: #fff;
+			background-color: #2a1f14;
+			}
+		header h3 {
+			font-family: "Emblema One", system-ui;
+			font-weight: 400;
+			font-style: normal;
+		}
+		#contact, #form h2 {
+			text-align: center;
+		}
+		body {
+		background-color: #e5e9fc;
+		}	
+		
+	/* Style rules for header area*/
+		header h1 {
+			padding: 2%;
+			text-align: center;
+		}
+		
+	/* Style rules for header content */
+	
+		header {
+				text-align: center;
+				font-size: 3em;
+				color: #2a1f14;
+				
+		}
+		 header h1 {
+			font-family: "Emblema One", system-ui;
+			font-weight: 400;
+			font-style: normal;
+			margin: 2% 0 0 3%;
+			padding: 2%;
+			text-align: center;
+			font-size: 4em;
+			color: #fff;
+			background-color: #2a1f14;
+		
+			}
+		 header h2 {
+			font-family: "Emblema One", system-ui;
+			font-weight: 400;
+			font-style: normal;
+			margin: 2% 0 0 3%;
+			padding: 2%;
+			text-align: center;
+			font-size: 4em;
+			color: #fff;
+			background-color: #2a1f14;
+		
+			}
+	
+	/* Style rules for navigation area */
+	
+		
+			
+		
+		.mobile-nav a {
+			color: #2a1f14;
+			text-align: center;
+			font-size: 2em;
+			text-decoration: none;
+			padding: 3%;
+			display: block;
+		}
+		
+		.mobile-nav a.nav-icon {
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			color: #f6eee4;
+			padding: 2%;
+		}
+		
+		.nav-icon div {
+			height: 40px;
+			width: 40px;
+			color: #2a1f14;
+		} 
+	}
+	/* Style rules for main content*/
+	
+		main {
+				padding: 2%;
+				background-color: #e5e9fc;
+				overflow: auto;
+				font-family: "Emblema One", system-ui;
+				font-weight: 400;
+				font-style: normal;
+			
+		}
+		main p {
+				font-size:1.25em;
+		}
+		main h3 {
+			padding: 2%;
+		}
+		main ul {
+			list-style-type: square;
+		}
+		
+		.link {
+			color: #4d3319;
+			font-weight: bold;
+			font-style: italic;
+		}
+		.action {
+			font-size: 1.75em;
+			font-weight: bold;
+			text-align: center;
+		}
+		.round {
+			border-radius: 6px;
+		}
+		aside {
+			text-align: center;
+			font-size: 1.5em;
+			font-weight: bold;
+			text-shadow: 4px 4px 10px #c5a687;
+		}
+		figure {
+			overflow: hidden;
+			box-shadow: 6px 6px 10px #c5a687;
+			margin: 2% auto;
+			background-color: #fff;
+				}
+
+		figure img {
+			width: 100%;
+			height: 300px;
+			object-fit: cover;
+			display: block;
+		}
+		figcaption {
+			padding: 2%;
+			border-top: 4px solid #2a1f14;
+		}
+		#info ul {
+			margin-left: 10%;
+		}
+		.id {
+			text-align: center;
+		}
+		.map {
+			border: 5px solid #2a1f14
+		}
+		.tel-link {
+			background-color: #2a1f14;
+			padding: 2%;
+			width: 80%;
+			margin-top: 0;
+			margin-bottom: 0;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		a {
+			color: #2a1f14;
+			text-decoration: none;
+		}
+		#questions p {
+			cursor: pointer;
+		}
+		#answer {
+			text-align: center;
+			font-weight: bold;
+			width: 80%;
+			margin: 0 auto;
+		}
+		#answer h2 {
+			display: none;
+		}
+	
+	/* Style rules for form elements */
+		fieldset, input, textarea {
+			margin-bottom: 2%;
+		}
+		legend {
+			font-weight: bold;
+			font-size: 1.25em;
+		}
+		label {
+			display: block;
+			padding-top: 2%;
+		}
+		form, #submit {
+			margin-top: 0;
+			margin-bottom: 0;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			padding: 2%;
+			background-color: #78593a;
+			color: #f6eee4;
+			font-size: 1.25em;
+			border-radius: 10px;
+		}
+	/* Style rules for footer content */
+	
+			footer {
+				text-align: center;
+				font-size: 0.65em;
+				clear: left;
+				background-color: #2a1f14;
+				color: #f6eee4;
+				overflow: auto;
+			}
+			footer a {
+				color: #f3e6d8;
+				text-decoration: none;
+			}
+		.social img {
+				display: inline-block;
+				padding: 4%;
+			}
+}	
+	/* Media Query for Tablet Viewport*/
+		@media screen and (min-width: 550px) and (max-width: 768px) {
+		
+		
+		/* Tablet Viewport: Show tab-desk class, hide mobile class */
+			.tab-desk, .desktop {
+				display: block;
+			}
+			.mobile, .mobile-tablet, .mobile-nav {
+				display: none;
+			}
+			
+		/* Tablet Viewpoer: Style rules for form elements */
+			form {
+				width: 70%;
+				margin-bottom: 0;
+				margin-top: 0;
+				margin-left: auto;
+				margin-right: auto;
+			}	
+		
+		/* Tablet Viewport: Style rules for footer content*/
+			.copyright {
+				float: left;
+				width: 65%
+			}
+			.social {
+				float: right;
+				width: 25%;
+			}
+			
+		/* Tablet Viewport: Style rule for nav area*/
+			nav li {
+				border-top: none;
+				display: inline-block;
+				font-size: 1.25em;
+				border-width: solid 0.5px;
+				border-color: #f6eee4;
+			}
+			
+			nav li a {
+				padding-top: 1em;
+				padding-bottom: 1em;
+				padding-left: 2em;
+				padding-right: 2em;
+			}
+			nav ul {
+				list-style-type: none;
+				text-align: center;
+			}
+			grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 10px;
+			}
+			aside {
+				grid-column: 1/ span 2;
+			}
+			
+			nav ul {
+				list-style-type: none;
+				text-align: center;
+			}
+			
+			
+		/* Tablet Viewport: Style rule for map*/
+			.map {
+				width: 500px;
+				height: 450px;
+			}
+		}
+	/* Media Query for Desktop Viewport.*/
+		@media screen and (min-width: 1000px) and (max-width: 1920px){
+		
+		/* Desktop Viewport: Show desktop class, hide mobile-tablet class. */
+		.tab-desk, .desktop {
+			display: block;
+		}
+		.mobile, .mobile-tablet, .mobile-nav {
+			display: none;	
+		}
+		/* Desktop Viewport: Style rule for header.*/
+			header {
+				padding: 0;
+			}
+			 header h1 {
+			font-family: "Emblema One", system-ui;
+			font-weight: 400;
+			font-style: normal;
+			margin: 2% 0 0 3%;
+			padding: 2%;
+			text-align: center;
+			font-size: 4em;
+			color: #fff;
+			background-color: #2a1f14;
+		
+			}
+			 header h2 {
+			font-family: "Emblema One", system-ui;
+			font-weight: 400;
+			font-style: normal;
+			margin: 2% 0 0 3%;
+			padding: 2%;
+			text-align: center;
+			font-size: 4em;
+			color: #fff;
+			background-color: #2a1f14;
+		
+			}
+		/* Desktop Viewport: Style rule for form elements */
+			form{
+				width: auto;
+			}
+			form-grid {
+				display: grid;
+				grid-template-columns: auto auto;
+				gap: 20px;
+			}
+			btn {
+				grid-column: 1/ span 2;
+			}
+		
+		/* Desktop Viewport: Style rules for nav area.*/
+			nav li {
+				border-top: none;
+				display: inline-block;
+				font-size: 1.5em;
+				border-color: #fff;
+			}
+			
+			nav li a {
+				padding-top: 1em;
+				padding-bottom: 1em;
+				padding-left: 2em;
+				padding-right: 2em;
+				color: #f6eee4;
+				text-decoration: none;
+		
+			}
+			nav li a:hover {
+				color: #2a1f14;
+				background-color: #f6eee4;
+				opacity: 0.5;
+			}
+			nav ul {
+				text-align: center;
+				padding-top: 1em;
+				padding-bottom: 1em;
+				padding-left: 2em;
+				padding-right: 2em;
+			}
+			
+		/* Desktop Viewport: Style rules for main content.*/
+			#info ul {
+				margin-left: 5%;
+			}
+			main h3 {
+				font-size: 1.5em;
+			}
+			grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 30px;
+			}
+			aside {
+			grid-column: 1/ span 3;
+			font-size: 2em;
+		}
+	}
+	/* Style rule for table */
+
+			table {
+				border: 1px solid 2a1f14;
+				margin-top: 0;
+				margin-bottom: 0;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			caption {
+				font-size: 1.5em;
+				font-weight: bold;
+				padding: 1%;
+			}
+			th, td {
+				border: 1px solid #2a1f14;
+				padding: 1%;
+			}
+			th {
+				background-color: #2a1f14;
+				color: #fff;
+				font-size: 1.15em;
+			}
+	
+	
+	/* Media Query for Print*/
+		@media print {
+		
+		body {
+			background-color: #fff;
+			color: #000;
+		}
+	}
+	/* Media Query for large desktop viewports*/
+			@media screen and (min-width: 1921px) {
+			
+			body {
+				background-color: linear-gradient(#f6eee4, #78593a);
+			}				
+			grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+				gap: 30px;
+			}
+			aside {
+			grid-column: 1/ span 4;
+			font-size: 3em;
+				}		
+	}

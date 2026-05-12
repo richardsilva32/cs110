@@ -1,0 +1,390 @@
+<!--
+    Student name: Richard Silva
+    File Name: template.html
+    Date: 3/4/26
+
+    Purpose of this file:
+    This is the main portfolio page that serves as a homepage for all
+    completed web design projects. It displays links to three websites
+    (Strike a Chord, Wild Rescues, and Student Clubs), includes a live
+    date and time widget, and uses JavaScript to animate two floating
+    HAL-9000 images around the screen.
+-->
+
+<!-- Group members: Richard Silva -->
+
+<!-- Declares this document as HTML5 so browsers render it using modern standards -->
+<!DOCTYPE html>
+
+<!-- Root element of the webpage; lang="en" tells browsers and screen readers that the content is in English -->
+<html lang="en">
+
+<head>
+    <!-- Contains metadata and resources that are not directly displayed on the page -->
+
+    <!-- Sets the title shown in the browser tab and bookmarks -->
+    <title>Richard Silva</title>
+
+    <!-- Specifies UTF-8 character encoding so special characters display correctly -->
+    <meta charset="utf-8">
+
+    <!-- Links an external CSS stylesheet that controls the overall appearance of the page -->
+    <link rel="stylesheet" href="style-css/styles.css">
+
+    <!-- Internal CSS styles used only for this specific page -->
+    <style>
+
+        /* ==========================================================
+           FLOATING GIF STYLING
+           These rules control the appearance and positioning of the
+           animated HAL-9000 images that move around the browser window.
+           ========================================================== */
+
+        .floating-gif {
+            /* Fixes the images relative to the browser viewport so they
+               remain visible even when the page is scrolled */
+            position: fixed;
+
+            /* Sets a consistent width for both images */
+            width: 100px;
+
+            /* Automatically calculates height to preserve aspect ratio */
+            height: auto;
+
+            /* Places the images above most page content */
+            z-index: 1000;
+
+            /* Prevents the images from intercepting mouse clicks */
+            pointer-events: none;
+        }
+
+        /* Starting position for the first floating image */
+        #gif1 {
+            top: 100px;
+            left: 50px;
+        }
+
+        /* Starting position for the second floating image */
+        #gif2 {
+            top: 300px;
+            left: 200px;
+        }
+
+        /* ==========================================================
+           LIVE DATE/TIME DISPLAY
+           Styles the box that appears in the upper-right corner.
+           ========================================================== */
+        #datetime {
+            /* Keeps the date/time visible in a fixed location */
+            position: fixed;
+
+            /* Places the box near the top-right corner */
+            top: 10px;
+            right: 10px;
+
+            /* Semi-transparent black background for readability */
+            background: rgba(0, 0, 0, 0.75);
+
+            /* White text contrasts well against the dark background */
+            color: white;
+
+            /* Adds space inside the box around the text */
+            padding: 10px 15px;
+
+            /* Rounds the corners for a softer appearance */
+            border-radius: 10px;
+
+            /* Uses a clean, readable font */
+            font-family: Arial, sans-serif;
+
+            /* Sets the text size */
+            font-size: 1rem;
+
+            /* Ensures the box appears above the animated images */
+            z-index: 1001;
+
+            /* Adds a subtle shadow to create depth */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ==========================================================
+         LIVE DATE AND TIME CONTAINER
+         JavaScript updates the text inside this empty div every second.
+         ========================================================== -->
+    <div id="datetime"></div>
+
+    <!-- ==========================================================
+         FLOATING IMAGES
+         These images are animated by JavaScript and bounce around
+         the screen like screensavers.
+         ========================================================== -->
+
+    <!-- First HAL-9000 image -->
+    <img id="gif1"
+         class="floating-gif"
+         src="hal-9000.png"
+         alt="Floating animation 1">
+
+    <!-- Second HAL-9000 image -->
+    <img id="gif2"
+         class="floating-gif"
+         src="hal-9000.png"
+         alt="Floating animation 2">
+
+    <!-- ==========================================================
+         HEADER SECTION
+         Contains the page title and a decorative banner image.
+         ========================================================== -->
+    <header>
+
+        <!-- Main heading identifying the owner of the portfolio -->
+        <h1>Richard Silva.</h1>
+
+        <!-- Banner image used for visual enhancement -->
+        <img src="tech-banner.png"
+             alt="Flowing code"
+             height="260"
+             width="400">
+    </header>
+
+    <!-- ==========================================================
+         NAVIGATION SECTION
+         Uses a table to organize links to completed projects along
+         with progress status and modification dates.
+         ========================================================== -->
+    <nav>
+        <table>
+
+            <!-- Table header row describing each column -->
+            <tr>
+                <th>Website</th>
+                <th>Current Progress</th>
+                <th>Date Modified</th>
+            </tr>
+
+            <!-- ==================================================
+                 STRIKE A CHORD PROJECT
+                 ================================================== -->
+            <tr>
+                <!-- Hyperlink to the Strike a Chord project -->
+                <th>
+                    <a href="Strike_A_Chord/bootstrap.html" target="_blank">
+                        Strike a Chord
+                    </a>
+                </th>
+
+                <!-- Indicates the current completion status -->
+                <th>(Completed Chapter 12)</th>
+
+                <!-- Shows the last modification date -->
+                <th>5/11/26</th>
+            </tr>
+
+            <!-- ==================================================
+                 WILD RESCUES PROJECT
+                 ================================================== -->
+            <tr>
+                <th>
+                    <a href="Wild_Rescues/bootstrap.html" target="_blank">
+                        Wild Rescues
+                    </a>
+                </th>
+                <th>(Completed Chapter 12)</th>
+                <th>5/11/26</th>
+            </tr>
+
+            <!-- ==================================================
+                 STUDENT CLUBS PROJECT
+                 ================================================== -->
+            <tr>
+                <th>
+                    <a href="Student_Clubs/bootstrap.html" target="_blank">
+                        Student Clubs
+                    </a>
+                </th>
+                <th>(Completed Chapter 12)</th>
+                <th>5/12/26</th>
+            </tr>
+        </table>
+    </nav>
+
+    <!-- ==========================================================
+         MAIN CONTENT SECTION
+         Contains descriptive paragraphs explaining personal thoughts
+         and reflections on each website project.
+         ========================================================== -->
+    <main>
+
+        <!-- ===================== STRIKE A CHORD ===================== -->
+        <h1>Strike a Chord:</h1>
+
+        <!-- Paragraph describing the experience building SAC -->
+        <p>
+            Building SAC (Strike a Chord) was the more engaging of the labs in my opinion.
+            I found that throughout the chapters, Strike a Chord was relatively simpler to
+            put together than WR (Wild Rescues) or SC (Student Clubs).
+        </p>
+
+        <!-- Additional explanatory paragraph -->
+        <p>
+            If you wish to see the individual parts of the website, see the annotations
+            inside the HTML and CSS, as each section/chapter will be marked with the
+            content from that chapter.
+        </p>
+
+        <!-- Line break to visually separate sections -->
+        <br>
+
+        <!-- ===================== WILD RESCUES ===================== -->
+        <h1>Wild Rescues:</h1>
+
+        <!-- Reflection on the Wild Rescues project -->
+        <p>
+            WR was not as engaging as SAC. I found that besides small things that were
+            different, I was simply re-doing what I had already done with SAC.
+            WR was also much more prone to bugs than SAC, which made it much more
+            challenging to navigate.
+        </p>
+
+        <!-- Additional explanatory paragraph -->
+        <p>
+            If you wish to see the individual parts of the website, see the annotations
+            inside the HTML and CSS, as each section/chapter will be marked with the
+            content from that chapter.
+        </p>
+
+        <!-- Another line break to separate content -->
+        <br>
+
+        <!-- ===================== STUDENT CLUBS ===================== -->
+        <h1>Student Clubs:</h1>
+
+        <!-- Reflection on the Student Clubs project -->
+        <p>
+            SC was the website that was the least in need of maintenance, with it taking
+            much less time to refurbish compared to the other two.
+        </p>
+
+        <!-- Additional explanatory paragraph -->
+        <p>
+            If you wish to see the individual parts of the website, see the annotations
+            inside the HTML and CSS, as each section/chapter will be marked with the
+            content from that chapter.
+        </p>
+    </main>
+
+    <!-- ==========================================================
+         FOOTER SECTION
+         Contains copyright information and contact details.
+         ========================================================== -->
+    <footer>
+
+        <!-- Copyright notice -->
+        <p>&copy; Copyright 2021. All Rights Reserved.</p>
+
+        <!-- Clickable email address using a mailto link -->
+        <p>
+            <a href="mailto:r.d.silva@my.ccsu.edu" class="text-white">
+                r.d.silva@my.ccsu.edu
+            </a>
+        </p>
+
+        <!-- Phone number -->
+        <p>(203) 451-7825</p>
+    </footer>
+
+    <!-- ==========================================================
+         JAVASCRIPT SECTION
+         Adds interactivity:
+         1. Updates the live date and time every second.
+         2. Animates the floating images.
+         ========================================================== -->
+    <script>
+
+        /* ==========================================================
+           LIVE DATE AND TIME FUNCTION
+           Creates a formatted string representing the current date
+           and time and inserts it into the #datetime element.
+           ========================================================== */
+        function updateDateTime() {
+            /* Creates a Date object containing the current system time */
+            const now = new Date();
+
+            /* Formatting options for toLocaleString() */
+            const options = {
+                weekday: 'long',   // e.g., Tuesday
+                year: 'numeric',   // e.g., 2026
+                month: 'long',     // e.g., March
+                day: 'numeric',    // e.g., 4
+                hour: '2-digit',   // e.g., 03
+                minute: '2-digit', // e.g., 45
+                second: '2-digit'  // e.g., 27
+            };
+
+            /* Inserts the formatted date/time into the page */
+            document.getElementById('datetime').textContent =
+                now.toLocaleString('en-US', options);
+        }
+
+        /* Runs the function immediately when the page loads */
+        updateDateTime();
+
+        /* Repeats the function every 1000 milliseconds (1 second) */
+        setInterval(updateDateTime, 1000);
+
+        /* ==========================================================
+           FLOATING GIF ANIMATION FUNCTION
+           Moves an image continuously and reverses direction when
+           it hits the edges of the browser window.
+           ========================================================== */
+        function animateGif(elementId, dx, dy) {
+
+            /* Gets the image element using its ID */
+            const gif = document.getElementById(elementId);
+
+            /* Determines the initial horizontal and vertical positions */
+            let x = parseInt(gif.style.left) || gif.offsetLeft;
+            let y = parseInt(gif.style.top) || gif.offsetTop;
+
+            /* Recursive animation loop */
+            function move() {
+
+                /* Updates position by adding movement speed */
+                x += dx;
+                y += dy;
+
+                /* Reverse horizontal direction when touching side edges */
+                if (x <= 0 || x + gif.offsetWidth >= window.innerWidth) {
+                    dx = -dx;
+                }
+
+                /* Reverse vertical direction when touching top/bottom edges */
+                if (y <= 0 || y + gif.offsetHeight >= window.innerHeight) {
+                    dy = -dy;
+                }
+
+                /* Applies the new coordinates */
+                gif.style.left = x + 'px';
+                gif.style.top = y + 'px';
+
+                /* Requests the browser to draw the next animation frame */
+                requestAnimationFrame(move);
+            }
+
+            /* Starts the movement loop */
+            move();
+        }
+
+        /* ==========================================================
+           START BOTH ANIMATIONS
+           Each image is given a different speed and direction so they
+           move independently and create a more dynamic effect.
+           ========================================================== */
+        animateGif('gif1', 2, 1.5);
+        animateGif('gif2', -1.5, 2);
+    </script>
+</body>
+</html>

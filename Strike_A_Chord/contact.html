@@ -1,0 +1,284 @@
+<!-- Student name: Richard Silva.
+     File Name: contact.html.
+     Date: 3/11/26. -->
+<!-- Group members: Richard Silva. -->
+<!DOCTYPE html> <!-- Declares the document type and tells the browser to use HTML5 -->
+
+<html lang="en"> <!-- Root element of the webpage; lang="en" specifies that the content is in English -->
+
+<head> <!-- Contains metadata, title, stylesheets, fonts, and icons -->
+
+    <title>Location | Strike a Chord.</title>
+    <!-- Text displayed in the browser tab -->
+
+    <meta charset="utf-8">
+    <!-- Sets the character encoding to UTF-8 so all characters display correctly -->
+
+    <meta name="description"
+          content="Contact us at (814)555-9228 or visit us at 1122 Music Lane, Chicago, IL for more information">
+    <!-- Provides a description of the webpage for search engines -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes the page responsive so it displays properly on mobile devices -->
+
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Links the external CSS stylesheet used to style the webpage -->
+
+    <!-- Google Font: DM Serif Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Establishes an early connection to Google Fonts for faster loading -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Establishes an early connection to Google's font file server -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+        rel="stylesheet">
+    <!-- Loads the DM Serif Display font -->
+
+    <!-- Google Font: Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Establishes another connection to Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Establishes another connection to the font file server -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Loads the Roboto font family -->
+
+    <!-- Favicon and device icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Standard favicon displayed in browser tabs -->
+
+    <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32.png">
+    <!-- 32x32 PNG favicon -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <!-- Icon used when the site is saved to an Apple device home screen -->
+
+    <link rel="icon" sizes="192x192" href="images/andriod-chrome-192.png">
+    <!-- 192x192 icon used by Android devices and Chrome -->
+</head>
+
+<body> <!-- Contains all visible content of the webpage -->
+
+    <script src="scripts/script.js"></script>
+    <!-- Links the external JavaScript file used for interactive features -->
+
+</body>
+
+<nav class="mobile-nav">
+    <!-- Navigation menu displayed on mobile devices -->
+
+    <div id="menu-links">
+        <!-- Container holding the mobile navigation links -->
+
+        <a href="bootstrap.html">Home</a>
+        <!-- Link to the homepage -->
+
+        <a href="lessons.html">Lessons</a>
+        <!-- Link to the Lessons page -->
+
+        <a href="instructors.html">Instructors</a>
+        <!-- Link to the Instructors page -->
+
+        <a href="rentals.html">Rentals</a>
+        <!-- Link to the Rentals page -->
+
+        <a href="contact.html">Contact Us.</a>
+        <!-- Link to the Contact page -->
+    </div>
+
+    <a class="menu-icon" onclick="hamburger()">
+        <!-- Clickable icon that calls the hamburger() JavaScript function -->
+
+        <div>&#9776;</div>
+        <!-- Displays the hamburger menu icon (☰) -->
+    </a>
+</nav>
+
+<header>
+    <!-- Header section containing the website title -->
+
+    <h1>
+        <span class="tab-desk">&#9836;</span>
+        <!-- Musical note symbol shown on tablet and desktop screens -->
+
+        Strike a Chord
+
+        <span class="tab-desk">&#9836;</span>
+        <!-- Musical note symbol shown on tablet and desktop screens -->
+    </h1>
+</header>
+
+<nav class="tab-desk">
+    <!-- Navigation menu displayed on tablet and desktop screens -->
+
+    <ul>
+        <!-- Unordered list of navigation links -->
+
+        <li><a href="bootstrap.html">Home</a></li>
+        <!-- Link to the homepage -->
+
+        <li><a href="lessons.html">Lessons</a></li>
+        <!-- Link to the Lessons page -->
+
+        <li><a href="instructors.html">Instructors</a></li>
+        <!-- Link to the Instructors page -->
+
+        <li><a href="rentals.html">Rentals</a></li>
+        <!-- Link to the Rentals page -->
+
+        <li><a href="contact.html">Contact</a></li>
+        <!-- Link to the Contact page -->
+    </ul>
+</nav>
+
+<main>
+    <!-- Main content area of the webpage -->
+
+    <div>
+        <!-- Container for contact information -->
+
+        <id contact>
+            <!-- Identifier used for the contact section -->
+
+            <h2>Contact us today to schedule your first lesson.</h2>
+            <!-- Section heading -->
+
+            <p>
+                <a href="tel:(814) 555-9228" class="tel-link mobile"></a>
+            </p>
+            <!-- Telephone link for mobile devices -->
+
+            <p class="tab-desk">(814) 555-9228.</p>
+            <!-- Phone number displayed on tablet and desktop screens -->
+
+            <p>
+                Email:
+                <a href="malito:lessons@strikeachord.net" class="email-link">
+                    lessons@strikeachord.net
+                </a>
+            </p>
+            <!-- Email link -->
+
+            <p>We are located at: 1122 Music Lane, Chicago, IL 60007</p>
+            <!-- Physical address -->
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190255.91261677735!2d-87.73187899999999!3d41.83371054999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL!5e0!3m2!1sen!2sus!4v1771692599299!5m2!1sen!2sus"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <!-- Embedded Google Map showing the business location -->
+    </div>
+
+    <div id="form">
+        <!-- Container for the contact form -->
+
+        <h2>Complete the form below and one of our staff members will contact you.</h2>
+        <!-- Form heading -->
+
+        <form class="form-grid">
+            <!-- Start of the contact form -->
+
+            <fieldset>
+                <!-- Groups customer information fields -->
+
+                <legend>Customer Information.</legend>
+                <!-- Title for the fieldset -->
+
+                <label for="fName">First Name:</label>
+                <input type="text" name="fName" id="fName">
+                <!-- Text box for the first name -->
+
+                <label for="lName">Last Name:</label>
+                <input type="text" name="lName" id="lName">
+                <!-- Text box for the last name -->
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <!-- Email input field -->
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+                <!-- Telephone input field -->
+            </fieldset>
+
+            <fieldset>
+                <!-- Groups musical interest options -->
+
+                <legend>Musical Interest.</legend>
+                <!-- Title for the fieldset -->
+
+                <p>I am interested in:</p>
+                <!-- Introductory text -->
+
+                <label for="guitarles">
+                    <input type="checkbox" name="interest" id="guitarles"
+                           value="Guitar Lessons">Guitar Lessons.
+                </label>
+                <!-- Checkbox for Guitar Lessons -->
+
+                <label for="piano">
+                    <input type="checkbox" name="interest" id="pianoles"
+                           value="Piano Lessons">Piano Lessons.
+                </label>
+                <!-- Checkbox for Piano Lessons -->
+
+                <label for="violin">
+                    <input type="checkbox" name="interest" id="violinles"
+                           value="Violin Lessons">Violin Lessons.
+                </label>
+                <!-- Checkbox for Violin Lessons -->
+
+                <label for="rent">
+                    <input type="checkbox" name="interest" id="rent"
+                           value="Rental Equipment">Rental Equipment.
+                </label>
+                <!-- Checkbox for Rental Equipment -->
+            </fieldset>
+
+            <button type="submit" id="submit" value="Submit" class="btn">
+                Submit.
+            </button>
+            <!-- Submit button that sends the form data -->
+        </form>
+    </div>
+</main>
+
+<footer>
+    <!-- Footer section containing copyright and social media links -->
+
+    <div class="copyright">
+        <!-- Container for copyright information -->
+
+        <p>&copy; Copyright 2021. All Rights Reserved.</p>
+        <!-- Copyright notice -->
+
+        <p>lessons@strikeachord.net</p>
+        <!-- Contact email address -->
+    </div>
+
+    <div class="social">
+        <!-- Container for social media icons -->
+
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="images/facebook-logo.png" alt="The facebook logo">
+        </a>
+        <!-- Facebook link opening in a new tab -->
+
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="images/twitter-logo.png" alt="The twitter logo">
+        </a>
+        <!-- Twitter link opening in a new tab -->
+
+        <span class="value">Free</span>
+        <!-- Span element containing the word "Free" -->
+    </div>
+</footer>
+
+</html> <!-- Closing tag for the HTML document -->

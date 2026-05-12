@@ -1,0 +1,225 @@
+<!-- Student name: Richard Silva.
+     File Name: template.html.
+     Date: 2/20/26. -->
+<!-- Group members: Richard Silva. -->
+<!DOCTYPE html> <!-- Declares the document type and tells the browser to use HTML5 -->
+
+<html lang="en"> <!-- Root element of the webpage; lang="en" specifies that the content is in English -->
+
+<head> <!-- Contains metadata, title, stylesheets, fonts, and icons -->
+
+    <title>Instructors | Strike a Chord.</title>
+    <!-- Text displayed in the browser tab -->
+
+    <meta charset="utf-8">
+    <!-- Sets the character encoding to UTF-8 so all characters display correctly -->
+
+    <meta name="description"
+          content="Our instructors are knowledgeable and professional.">
+    <!-- Provides a description of the webpage for search engines -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes the page responsive so it displays properly on mobile devices -->
+
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Links the external CSS stylesheet used to style the webpage -->
+
+    <!-- Google Font: DM Serif Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Establishes an early connection to Google Fonts for faster loading -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Establishes an early connection to Google's font file server -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+        rel="stylesheet">
+    <!-- Loads the DM Serif Display font -->
+
+    <!-- Google Font: Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Establishes another connection to Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Establishes another connection to the font file server -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Loads the Roboto font family -->
+
+    <!-- Favicon and device icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Standard favicon displayed in browser tabs -->
+
+    <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32.png">
+    <!-- 32x32 PNG favicon -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <!-- Icon used when the site is saved to an Apple device home screen -->
+
+    <link rel="icon" sizes="192x192" href="images/andriod-chrome-192.png">
+    <!-- 192x192 icon used by Android devices and Chrome -->
+</head>
+
+<body> <!-- Contains all visible content of the webpage -->
+
+    <script src="scripts/script.js"></script>
+    <!-- Links the external JavaScript file used for interactive features -->
+
+    <nav class="mobile-nav">
+        <!-- Navigation menu displayed on mobile devices -->
+
+        <div id="menu-links">
+            <!-- Container holding the mobile navigation links -->
+
+            <a href="bootstrap.html">Home</a>
+            <!-- Link to the homepage -->
+
+            <a href="lessons.html">Lessons</a>
+            <!-- Link to the Lessons page -->
+
+            <a href="instructors.html">Instructors</a>
+            <!-- Link to the Instructors page -->
+
+            <a href="rentals.html">Rentals</a>
+            <!-- Link to the Rentals page -->
+
+            <a href="contact.html">Contact Us.</a>
+            <!-- Link to the Contact page -->
+        </div>
+
+        <a class="menu-icon" onclick="hamburger()">
+            <!-- Clickable icon that calls the hamburger() JavaScript function -->
+
+            <div>&#9776;</div>
+            <!-- Displays the hamburger menu icon (☰) -->
+        </a>
+    </nav>
+
+    <header>
+        <!-- Header section containing the website title -->
+
+        <h1>
+            <span class="tab-desk">&#9836;</span>
+            <!-- Musical note symbol shown on tablet and desktop screens -->
+
+            Strike a Chord
+
+            <span class="tab-desk">&#9836;</span>
+            <!-- Musical note symbol shown on tablet and desktop screens -->
+        </h1>
+    </header>
+
+    <!-- This portion of code relates to the sections of the website -->
+    <nav>
+        <!-- Navigation menu for the main website sections -->
+
+        <ul>
+            <!-- Unordered list of navigation links -->
+
+            <li><a href="bootstrap.html">Home</a></li>
+            <!-- Link to the homepage -->
+
+            <li><a href="lessons.html">Lessons</a></li>
+            <!-- Link to the Lessons page -->
+
+            <li><a href="instructors.html">Instructors</a></li>
+            <!-- Link to the Instructors page -->
+
+            <li><a href="rentals.html">Rentals</a></li>
+            <!-- Link to the Rentals page -->
+
+            <li><a href="contact.html">Contact</a></li>
+            <!-- Link to the Contact page -->
+        </ul>
+    </nav>
+
+    <!-- This section of code is the main part of the webpage, displaying a majority of what is included within the website. -->
+    <main class="grid">
+        <!-- Main content area using a CSS grid layout -->
+
+        <aside>
+            <!-- Sidebar content -->
+
+            <p>Meet our professional and talented instructors.</p>
+            <!-- Introductory text -->
+        </aside>
+
+        <figure>
+            <!-- Figure containing the first instructor's image and caption -->
+
+            <img src="images/guitar-instructor.jpg"
+                 alt="A music instructor holding a guitar.">
+            <!-- Image of the guitar instructor -->
+
+            <figcaption>Jack William's, Guitar.</figcaption>
+            <!-- Caption identifying the instructor -->
+        </figure>
+
+        <figure>
+            <!-- Figure containing the second instructor's image and caption -->
+
+            <img src="images/electric-guitar-instructor.jpg"
+                 alt="A music instructor holding an electric guitar">
+            <!-- Image of the electric guitar instructor -->
+
+            <figcaption>Jose Ramires, Guitar.</figcaption>
+            <!-- Caption identifying the instructor -->
+        </figure>
+
+        <figure>
+            <!-- Figure containing the third instructor's image and caption -->
+
+            <img src="images/piano-instructor.jpg"
+                 alt="A music instructor playing the piano">
+            <!-- Image of the piano instructor -->
+
+            <figcaption>Elisa Petrov, Piano.</figcaption>
+            <!-- Caption identifying the instructor -->
+        </figure>
+
+        <figure>
+            <!-- Figure containing the fourth instructor's image and caption -->
+
+            <img src="images/violin-instructor.jpg"
+                 alt="A music instructor holding a violin.">
+            <!-- Image of the violin instructor -->
+
+            <figcaption>Maya Hill, Violin.</figcaption>
+            <!-- Caption identifying the instructor -->
+        </figure>
+    </main>
+
+    <footer>
+        <!-- Footer section containing copyright and social media links -->
+
+        <div class="copyright">
+            <!-- Container for copyright information -->
+
+            <p>&copy; Copyright 2021. All Rights Reserved.</p>
+            <!-- Copyright notice -->
+
+            <p>lessons@strikeachord.net</p>
+            <!-- Contact email address -->
+        </div>
+
+        <div class="social">
+            <!-- Container for social media icons -->
+
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook-logo.png"
+                     alt="The facebook logo">
+            </a>
+            <!-- Facebook link opening in a new tab -->
+
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="images/twitter-logo.png"
+                     alt="The twitter logo">
+            </a>
+            <!-- Twitter link opening in a new tab -->
+        </div>
+    </footer>
+
+</body>
+</html> <!-- Closing tag for the HTML document -->

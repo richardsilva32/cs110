@@ -1,0 +1,218 @@
+/* 
+    Author: Richard Silva
+    File Name: styles.css
+    Date: 5/12/26
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, h2, p, table, tr, th, td, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Body Styling */
+body {
+    background-color: #0a0f1c;
+    color: #e2f3ff;
+    font-family: Verdana, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2%;
+    background: linear-gradient(to bottom, #09111f, #101b33);
+    border-bottom: 3px solid #00d9ff;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #00e5ff;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.7);
+}
+
+/* Banner Image */
+header img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+}
+
+/* Navigation/Table Section */
+nav {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #111b2d;
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.2);
+}
+
+th, td {
+    border: 1px solid #00d9ff;
+    padding: 1rem;
+    text-align: center;
+}
+
+tr:first-child {
+    background-color: #162742;
+    color: #00e5ff;
+    font-size: 1.1em;
+}
+
+tr:nth-child(even) {
+    background-color: #132033;
+}
+
+tr:nth-child(odd):not(:first-child) {
+    background-color: #0f1929;
+}
+
+/* Links */
+a {
+    color: #80f7ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px #00d9ff;
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    margin: 2rem auto;
+    background-color: #101826;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.15);
+}
+
+main h1 {
+    color: #00d9ff;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #00d9ff;
+    padding-bottom: 0.5rem;
+}
+
+main p {
+    margin-bottom: 1rem;
+    font-size: 1.05em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    background-color: #09111f;
+    border-top: 2px solid #00d9ff;
+    color: #8fb9d6;
+}
+
+/* ========================================= */
+/* MOBILE MEDIA QUERY */
+/* ========================================= */
+@media screen and (max-width: 629px) {
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    table, tr, th, td {
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        margin-bottom: 1rem;
+        border: 2px solid #00d9ff;
+    }
+
+    tr:first-child {
+        display: none;
+    }
+
+    th {
+        text-align: center;
+        border: none;
+        border-bottom: 1px solid #00d9ff;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    main h1 {
+        font-size: 1.5em;
+    }
+
+    main p {
+        font-size: 1em;
+    }
+}
+
+/* ========================================= */
+/* TABLET MEDIA QUERY */
+/* ========================================= */
+@media screen and (min-width: 630px) and (max-width: 1000px) {
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    nav {
+        width: 95%;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    th {
+        font-size: 0.95em;
+    }
+
+    main p {
+        font-size: 1.05em;
+    }
+}
+
+/* ========================================= */
+/* DESKTOP MEDIA QUERY */
+/* ========================================= */
+@media screen and (min-width: 1001px) {
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    main {
+        max-width: 1200px;
+    }
+
+    nav {
+        max-width: 1200px;
+    }
+
+    table {
+        font-size: 1.05em;
+    }
+
+    main p {
+        font-size: 1.1em;
+    }
+}

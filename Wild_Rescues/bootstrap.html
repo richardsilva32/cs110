@@ -1,0 +1,298 @@
+<!doctype html> <!-- Declares that this document uses HTML5 -->
+<html lang="en"> <!-- Root element of the page; lang="en" tells browsers and screen readers the content is in English -->
+
+  <head> <!-- Contains metadata, links to stylesheets, and other resources not displayed directly on the page -->
+
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <!-- Specifies UTF-8 character encoding so special characters and symbols display correctly -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Makes the page responsive by matching the viewport width to the device width and setting the initial zoom level -->
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Standard favicon used by many browsers -->
+
+    <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32.png">
+    <!-- 32x32 PNG favicon for browser tabs.
+         Note: type should typically be "image/png" instead of "images/png". -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <!-- Icon used when users save the site to the home screen on Apple devices -->
+
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+    <!-- Large icon used by Android devices and Chrome -->
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous">
+    <!-- Loads Bootstrap 5 CSS from a CDN.
+         integrity verifies the file has not been altered.
+         crossorigin allows the browser to request the file safely across domains. -->
+
+    <!-- My Style Sheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Links to a custom stylesheet containing site-specific styles -->
+
+    <title>Wildlife Rescue | Wild Rescues.</title>
+    <!-- Text displayed in the browser tab and used by search engines -->
+
+  </head>
+
+  <body> <!-- Contains all visible content on the page -->
+
+    <!-- Header and Hero Image -->
+    <header class="jumbotron jumbotron-fluid text-left hero">
+      <!-- Top section of the page.
+           jumbotron/jumbotron-fluid were Bootstrap 4 classes (not included in Bootstrap 5).
+           text-left aligns text to the left.
+           hero is likely a custom CSS class for a large background image. -->
+
+      <div class="container welcome">
+        <!-- Centers and constrains content width.
+             welcome is a custom CSS class for additional styling. -->
+
+        <h3 class="display-1 font-weight-bolder text-brown">Wild Rescues</h3>
+        <!-- Main heading of the page.
+             display-1 creates very large text.
+             font-weight-bolder makes the text extra bold.
+             text-brown is likely a custom class that sets the text color. -->
+
+        <p class="lead font-weight-bold">Rescue, Rehabilitate, Release</p>
+        <!-- Tagline under the main heading.
+             lead makes the paragraph stand out.
+             font-weight-bold makes it bold. -->
+
+        <a href="contacts.html"
+           role="button"
+           class="btn btn-outline-secondary btn-lg text-white bg-brown">
+          Partner With Us
+        </a>
+        <!-- Styled link that looks like a button.
+             href points to the contact page.
+             role="button" improves accessibility.
+             btn classes apply Bootstrap button styling.
+             text-white and bg-brown set the colors. -->
+      </div>
+    </header>
+
+    <!-- Bootstrap Navigation bar -->
+    <nav class="navbar navbar-dark bg-brown d-md-none">
+      <!-- Navigation menu.
+           navbar applies Bootstrap navigation styling.
+           navbar-dark adjusts link colors for dark backgrounds.
+           bg-brown is a custom background color.
+           d-md-none hides this navbar on medium and larger screens. -->
+
+      <a class="navbar-brand" href="index.html">&#128062; Wild Rescues</a>
+      <!-- Brand/logo link.
+           &#128062; displays a paw print emoji. -->
+
+      <!-- Hamburger menu icon -->
+      <button
+        class="navbar toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <!-- Button used to show/hide the menu on small screens.
+             aria-* attributes improve accessibility for screen readers.
+
+        -->
+
+        <span class="navbar-toggler-icon"></span>
+        <!-- Displays the hamburger icon -->
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <!-- Collapsible container that expands when the hamburger button is clicked -->
+
+        <ul class="navbar-nav ml-auto">
+          <!-- Unordered list of navigation links.
+               navbar-nav styles the list as a navigation menu.
+               ml-auto pushes links to the right in Bootstrap 4.
+               In Bootstrap 5, use ms-auto instead. -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <!-- Link to the homepage -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <!-- Link to the About page -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="partnership.html">Partnership</a>
+          </li>
+          <!-- Link to the Partnership page -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <!-- Link to the Gallery page -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="contacts.html">Contact</a>
+          </li>
+          <!-- Link to the Contact page -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="faqs.html">FAQs</a>
+          </li>
+          <!-- Link to the Frequently Asked Questions page -->
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="container-fluid">
+      <!-- Main content of the page.
+           container-fluid spans the full width of the viewport. -->
+
+      <div class="row g-4">
+        <!-- Bootstrap grid row.
+             g-4 adds spacing (gutters) between columns. -->
+
+        <!-- First column: About Us -->
+        <div class="col-sm-4">
+          <!-- Takes up one-third of the row on small screens and larger -->
+
+          <h1>About Us</h1>
+          <!-- Section heading -->
+
+          <p class="lead">
+            We are a nonprofit organization dedicated to helping injured wildlife
+          </p>
+          <!-- Introductory text -->
+
+          <figure>
+            <!-- Groups the image as a self-contained piece of content -->
+
+            <a href="about.html">
+              <img
+                src="images/baby-raccoons.jpg"
+                alt="a baby raccoon"
+                class="img-fluid rounded">
+            </a>
+            <!-- Clickable image linking to the About page.
+                 img-fluid makes the image responsive.
+                 rounded adds rounded corners.
+                 alt provides descriptive text for accessibility. -->
+          </figure>
+        </div>
+
+        <!-- Second column: Partnership -->
+        <div class="col-sm-4">
+          <h1>Partnership</h1>
+
+          <p class="lead">
+            Partner with us, Become a member or sponsor. We also need voulenteers.
+          </p>
+          <!-- Note: "voulenteers" should be corrected to "volunteers". -->
+
+          <figure>
+            <a href="partnership.html">
+              <img
+                src="images/blind-deer.jpg"
+                alt="blind deer"
+                class="img-fluid rounded">
+            </a>
+          </figure>
+        </div>
+
+        <!-- Third column: Gallery -->
+        <div class="col-sm-4">
+          <h1>Gallery</h1>
+
+          <p class="lead">
+            We help many types of wildlife. Meet our rescued friends.
+          </p>
+
+          <figure>
+            <a href="gallery.html">
+              <img
+                src="images/tortoise.jpg"
+                alt="tortise eating vegitation"
+                class="img-fluid rounded">
+            </a>
+            <!-- Note: "tortise" should be "tortoise" and
+                 "vegitation" should be "vegetation". -->
+          </figure>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="jumbotron-fluid text-center p-5 bg-brown">
+      <!-- Bottom section of the page.
+           text-center centers the text.
+           p-5 adds padding.
+           bg-brown applies a custom brown background color. -->
+
+      <div class="container text-white">
+        <!-- Centers content and makes text white -->
+
+        <p>&copy; Copyright 2021. All Rights Reserved.</p>
+        <!-- Copyright notice.
+             &copy; displays the © symbol. -->
+
+        <p>
+          <a href="mailto:contact@wildrescues.net" class="text-white">
+            contact@wildrescues.net
+          </a>
+        </p>
+        <!-- Clickable email link that opens the user's default mail application -->
+
+        <div class="social">
+          <!-- Custom class for styling social media icons -->
+
+          <a href="https://www.facebook.com" target="_blank">
+            <img
+              src="images/facebook-logo.png"
+              alt="The facebook logo"
+              class="pr-4">
+          </a>
+          <!-- Facebook link opening in a new tab.
+               pr-4 adds right padding in Bootstrap 4.
+               In Bootstrap 5, use pe-4 instead. -->
+
+          <a href="https://www.twitter.com" target="_blank">
+            <img
+              src="images/twitter-logo.png"
+              alt="The twitter logo">
+          </a>
+          <!-- Twitter link opening in a new tab -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous">
+    </script>
+    <!-- Includes Bootstrap JavaScript and Popper for interactive components
+         such as the collapsing navigation menu -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- The commented section below shows an alternative way to load Popper
+         and Bootstrap separately instead of using the bundle. -->
+
+    <!-- Custom JavaScript -->
+    <script src="scripts/script.js"></script>
+    <!-- Links to your own JavaScript file for additional functionality -->
+
+  </body>
+</html>
